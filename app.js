@@ -6,7 +6,7 @@ app.use(express.json());
 
 app.get("/", async (req, res) => {
   try {
-    const response = await axios.get("https://dummyjson.com/users", {
+    const response = await axios.get("https://dummyjson.com/uss", {
       timeout: 5000,
     });
     res.json(response.data);
