@@ -1,0 +1,49 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+jspm_packages/
+
+# Coverage outputs
+coverage/
+.nyc_output/
+
+# Build / dist
+dist/
+build/
+tmp/
+temp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env files (secrets, keys, tokens)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Jest cache
+jest.config.js.map
+.jest/
+
+# Optional: lockfiles (if you only want one)
+# yarn.lock
+# pnpm-lock.yaml
+# bun.lockb
