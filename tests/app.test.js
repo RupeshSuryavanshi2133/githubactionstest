@@ -22,6 +22,12 @@ describe("GET /", () => {
     expect(res.statusCode).toBe(200);
     expect(res.body.users.length).toBe(1);
     expect(res.body.users[0].email).toBe("test@example.com");
+
+    // 🔴 NEW: assert axios called with correct URL
+    expect(axios.get).toHaveBeenCalledWith(
+      "https://dummyjson.com/users",
+      expect.objectContaining({ timeout: 5000 })
+    );
   });
 });
 
